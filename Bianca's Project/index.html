@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta
+            name="description"
+            content="The Brunch Club is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" href="img/favicon.png"/>
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/queries.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+            defer
+            src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>The Brunch Club &mdash; we're simply the best!</title>
+</head>
+<body>
+<header class="header">
+    <a href="#">
+        <p class="name-of-company-logo">The Brunch Club</p>
+    </a>
+
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#home">Home</a></li>
+            <li><a class="main-nav-link" href="#ourstory">Our Story</a></li>
+            <li>
+                <a class="main-nav-link" href="#ourbest">Our Best</a>
+            </li>
+            <li><a class="main-nav-link" href="#gallery">Gallery</a></li>
+            <li><a class="main-nav-link nav-cta" href="#findus">Find Us</a></li>
+        </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+</header>
+
+<main>
+    <section class="section-hero" id="home">
+        <div class="hero">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">
+                    Welcome to The Brunch Club
+                </h1>
+                <p class="hero-description">
+                    Your go-to spot for a cozy brunch or to keep the good
+                    nights rolling. Enjoy a relaxed atmosphere with your loved ones, whether it's breakfast
+                    or lunch, in a friendly setting.
+                </p>
+
+                <a href="#home" class="btn btn--outline">Our story &darr;</a>
+                <div class="delivered-meals">
+                </div>
+            </div>
+            <div class="hero-img-box">
+                <picture>
+                    <source srcset="img/new photos/P7.jpg" type="image/webp"/>
+                    <source srcset="img/new photos/P7.jpg" type="image/png"/>
+
+                    <img
+                            src="img/new photos/P7.jpg"
+                            class="hero-img"
+                            style="border-radius: 10px"
+                            alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                    />
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-how" id="ourstory">
+        <div class="container">
+            <span class="subheading">Our story</span>
+            <h2 class="heading-secondary">
+                The Brunch Club: Where Brunches Become Moments
+            </h2>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="step-text-box">
+                        <p class="step-description">
+                            We created The Brunch Club with a simple yet profound purpose — to craft a space
+                            where mornings transform into cherished moments. Our vision was to establish a bistro
+                            that goes beyond the traditional dining experience, where the connection between
+                            people and the joy of sharing exceptional food and drinks are at the forefront.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="step-text-box">
+                        <p class="step-description">
+                            The warm ambiance, carefully crafted menu and complimentary drinks during happy
+                            hours are all part of our commitment to providing a delightful experience. We didn’t
+                            forget about your furry friends! Our pet-friendly space allows you to enjoy your meal
+                            without leaving your beloved pets behind, recognizing that they are a part of your family
+                            too.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="step-text-box">
+                        <p class="step-description">
+                            Join us at The Brunch Club and let's make every brunch a celebration of good food,
+                            good company, and the joy of being together.
+                        </p>
+                    </div>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!--            <div class="swiper-scrollbar"></div>-->
+        </div>
+    </section>
+
+    <section class="section-meals" id="ourbest">
+        <div class="container center-text">
+            <span class="subheading">OUR BEST</span>
+            <h2 class="heading-secondary">
+                Our most beloved dishes<br>rated by our most beloved customers
+            </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+            <div class="meal">
+                <img
+                        src="img/gallery2/p13.jpg"
+                        class="meal-img"
+                        alt="Japanese Gyozas"
+                />
+                <div class="meal-content">
+                    <div class="meal-tags">
+                        <span class="tag tag--vegetarian">Vegetarian</span>
+                    </div>
+                    <p class="meal-title">Yoghurt Protein Ball</p>
+                    <ul class="meal-attributes">
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                            <span><strong>420</strong> calories</span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon
+                                    class="meal-icon"
+                                    name="restaurant-outline"
+                            ></ion-icon>
+                            <span>NutriScore &reg; <strong>74</strong></span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                            <span><strong>4.9</strong> rating (537)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img
+                        src="img/meals/meal-2.jpg"
+                        class="meal-img"
+                        alt="Avocado Salad"
+                />
+                <div class="meal-content">
+                    <div class="meal-tags">
+                        <span class="tag tag--vegan">Vegan</span>
+                        <span class="tag tag--paleo">Paleo</span>
+                    </div>
+                    <p class="meal-title">Avocado Salad</p>
+                    <ul class="meal-attributes">
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                            <span><strong>400</strong> calories</span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon
+                                    class="meal-icon"
+                                    name="restaurant-outline"
+                            ></ion-icon>
+                            <span>NutriScore &reg; <strong>92</strong></span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                            <span><strong>4.8</strong> rating (441)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="diets">
+                <h3 class="heading-tertiary">Works with any diet:</h3>
+                <ul class="list">
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Vegetarian</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Vegan</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Pescatarian</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Gluten-free</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Lactose-free</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Keto</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Paleo</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Low FODMAP</span>
+                    </li>
+                    <li class="list-item">
+                        <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                        <span>Kid-friendly</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testimonials" id="gallery">
+        <div class="flex-wrapper">
+            <div class="container-for-flex">
+                <div class="gallery">
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p1.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                        <!-- <figcaption>Caption</figcaption> -->
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p2.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p3.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p4.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p5.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p6.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p7.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p8.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p9.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p10.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p11.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                    <figure class="gallery-item">
+                        <img
+                                src="img/gallery2/p12.jpg"
+                                alt="Photo of beautifully
+            arranged food"
+                        />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-map" id="findus">
+        <p class="subheading" style="text-align: center">where you can find our restaurant</p>
+        <h2 class="heading-secondary" style="text-align: center">Come and join us!</h2>
+        <div id="map"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container grid grid--footer">
+        <div class="logo-col">
+            <a href="#">
+                <p class="name-of-company-logo brunch-footer">The Brunch Club</p>
+            </a>
+
+            <ul class="social-links">
+                <li>
+                    <a class="footer-link" href="#"
+                    >
+                        <ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                        >
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#"
+                    >
+                        <ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                        >
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#"
+                    >
+                        <ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                        >
+                    </a>
+                </li>
+            </ul>
+
+            <p class="copyright">
+                Copyright &copy; <span class="year">2027</span> by The Brunch Club, Inc.
+                All rights reserved.
+            </p>
+        </div>
+
+        <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+                <p class="address">
+                    <a href="address" class="footer-link">
+                        Strada Regele Ferdinand 22-26, Cluj-Napoca 400110
+                    </a>
+                </p>
+                <p>
+                    <a class="footer-link" href="tel:+40 736 163 306">+40 736 163 306</a
+                    ><br/>
+                    <a class="footer-link" href="mailto:hello@omnifood.com"
+                    >thebrunchclub@gmail.com
+                    </a
+                    >
+                </p>
+            </address>
+        </div>
+
+        <nav class="nav-col">
+            <p class="footer-heading">Open</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Monday-Friday</a></li>
+                <li><a class="footer-link" href="#">10:00 - 18:00</a></li>
+                <li><a class="footer-link" href="#">Saturday-Sunday</a></li>
+                <li><a class="footer-link" href="#">09:00 - 17:00</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">About The Brunch Club</a></li>
+                <li><a class="footer-link" href="#">For Business</a></li>
+                <li><a class="footer-link" href="#">Cooking partners</a></li>
+                <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Recipe directory </a></li>
+                <li><a class="footer-link" href="#">Help center</a></li>
+                <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
